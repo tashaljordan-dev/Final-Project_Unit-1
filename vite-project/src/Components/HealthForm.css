@@ -46,7 +46,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(198, 8, 192);
+    background-color: rgb(18, 17, 18);
 }
 
 .live-preview {
@@ -64,10 +64,10 @@ button:hover {
 }
 
 .card {
-  border: 3px solid #cd1818;
+  border: 3px solid black;
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
-  background: #cba0a0;
+  background: rgb(255, 255, 255);
   margin: 40px auto; 
 }
