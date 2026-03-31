@@ -2,7 +2,7 @@
     max-width: 500px; 
     margin: 40px auto; 
     padding: 30px; 
-    font-weight: 48px;
+    font-weight: bold;
     background-color: rgb(140, 210, 193);
     border-radius: 8px; 
     border: 5px solid #000; 
@@ -14,13 +14,13 @@ h2 {
     text-align: center;
     color: rgb(0, 0, 0);
     margin-bottom: 20px;
-    font-size: 96px;
+    font-size: 24px;
 }
 
 form label { 
     display: block; 
     margin: 16px 0 4px; 
-    font-weight: 48px, bold;
+    font-weight: bold;
 }
 
 input, select, textarea {
@@ -50,7 +50,7 @@ button:hover {
 }
 
 .live-preview {
-  margin-top: 2cqb;
+  margin-top: 20px;
   background-color: #f4f7fb;
   padding: 15px;
   font-size: 18px; 

@@ -7,7 +7,7 @@ function About() {
       <div>
         <h1>&#128062;&#128062;About Help a Doggy Out&#128062;&#128062;</h1>
         <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-          <img src={dogPic} className="circle-img" alt="Taz" />\
+          <img src={dogPic} className="circle-img" alt="Taz" />
           <div>
             <h2>Meet Taz Mania Angel Jordan</h2>
             <p>
