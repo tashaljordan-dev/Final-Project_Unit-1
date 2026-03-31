@@ -1,18 +1,27 @@
 import { Routes, Route, Link } from "react-router-dom";
-import Home from "./Home.jsx";   // or "./home.jsx" — match EXACTLY
-import About from "./About.jsx"; // same rule here
+import Home from "./home.jsx";   
+import About from "./About.jsx"; 
+import HealthForm from "./Components/HealthForm.jsx";
+
+import "./App.css";
+
 
 function App() {
   return (
     <div>
-      <nav>
+      <nav 
+      className="nav-bar"
+      style={{backgroundColor: "tan", padding: "10px", display: "flex", justifyContent: "right", gap: "10px", fontSize: "18px", fontWeight: "bold", color: "black"}}>
         <Link to="/">Home</Link> |{" "}
-        <Link to="/about">About</Link>
+        <Link to="/about">About</Link>| {" "}
+        <Link to="/check-in">Health Check-In</Link>{" "}  
+
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/check-in" element={<HealthForm />} />
       </Routes>
     </div>
   );

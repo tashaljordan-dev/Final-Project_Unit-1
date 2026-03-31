@@ -1,0 +1,73 @@
+.container {
+    max-width: 500px; 
+    margin: 40px auto; 
+    padding: 30px; 
+    font-weight: 48px;
+    background-color: rgb(140, 210, 193);
+    border-radius: 8px; 
+    border: 5px solid #000; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-size: 96px;
+}
+
+form label { 
+    display: block; 
+    margin: 16px 0 4px; 
+    font-weight: 48px, bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 3px solid #080808;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #714539;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(198, 8, 192);
+}
+
+.live-preview {
+  margin-top: 2cqb;
+  background-color: #f4f7fb;
+  padding: 15px;
+  font-size: 18px; 
+  border-radius: 8px;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.cards-container {
+  flex: 1;
+  max-width: 400px;
+}
+
+.card {
+  border: 3px solid #cd1818;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #cba0a0;
+  margin: 40px auto; 
+}
