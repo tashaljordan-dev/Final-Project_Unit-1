@@ -4,6 +4,7 @@ import About from "./About.jsx";
 import HealthForm from "./Components/HealthForm.jsx";
 
 import "./App.css";
+import Footer from "./Footer.jsx";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/check-in" element={<HealthForm />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

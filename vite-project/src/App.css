@@ -46,3 +46,23 @@ h2 {
 .nav-bar a:hover {
   color: rgb(140, 210, 193); /* matches your palette */
 }
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: tan;
+  border-top: 5px solid rgb(140, 210, 193);
+  border-bottom: 5px solid black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-links a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: rgb(140, 210, 193);
+}
