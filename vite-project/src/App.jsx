@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
-import Home from "./home.jsx";   
+import Home from "./Home.jsx";
 import About from "./About.jsx"; 
 import HealthForm from "./Components/HealthForm.jsx";
 
