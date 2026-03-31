@@ -10,9 +10,9 @@ function Home() {
 <div className="title-box">
   <h1> Welcome to Help A Doggy Out!</h1>
 </div>
+        <div className="about-row">
 
 <img src={logo} className="logo" alt="Logo" />
-        <div className="about-row">
 
         <h3>
           Welcome to our <strong>Help A Doggy Out</strong> app! We are dedicated to helping owners of diabetic dogs track blood sugar levels and insulin injections. 
@@ -24,7 +24,7 @@ function Home() {
         <div className="about-row">
 
     <img src={Headshot} className="headshot" alt="Headshot" />
-        <h3>Dr. Tasha Jordan is an award winning STEM educator. She has taught in multiple school districts throughout the St. Louis region. She enjoys applying what she learns in LaunchCode to her students. She earned a Doctor or Education in STEM Teaching and Learning from the University of Pittsburgh in June 2024. 
+        <h3>Dr. Tasha Jordan is an award winning STEM educator. She has taught in multiple school districts throughout the St. Louis region. She enjoys applying what she learns in LaunchCode to her middle school computer science classroom. She earned a Doctor or Education in STEM Teaching and Learning from the University of Pittsburgh in June 2024. 
           
           <p>
           This project was built using React, Vite, and React Router. It demonstrates basic routing and component structure. The app developer (that's me!) 
