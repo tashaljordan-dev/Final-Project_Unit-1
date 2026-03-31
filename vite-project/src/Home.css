@@ -47,14 +47,19 @@ h3{
 
 .about-row {
   display: flex;
-  align-items: left;   /* vertically aligns text with the image */
-  gap: 20px;             /* space between image and text */
-  margin: 40px 0;
+  align-items: left;   
+  gap: 20px;             
+  background: rgba(200, 200, 200, 0.7); /* soft gray with transparency */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 .about-row h2 {
   margin: 0;
   text-align: left;
+  
 }
 
 body {
@@ -76,4 +81,3 @@ body::before {
 
   z-index: -1;
 }
-

@@ -10,6 +10,7 @@ function About() {
           <img src={dogPic} className="circle-img" alt="Taz" />
           <div>
             <h2>Meet Taz Mania Angel Jordan</h2>
+            <div class="text-box">
             <p>
               <strong>Help a Doggy Out</strong> is dedicated to my currently
               15 year old diabetic chihuahua <strong>Taz Mania Angel Jordan</strong>. I adopted Taz from the APA in St. Louis--he was a stray that had been surrendered by his previous owners. They told me that he was 25 pounds when he came in. <strong>Imagine that...A 25 pound chihuahua!</strong>
@@ -26,6 +27,7 @@ function About() {
               world...I would still pick YOU!</strong> 
               </p> 
             </p>
+            </div>
           </div>
         </div>
       </div>       
@@ -35,6 +37,7 @@ function About() {
       
         <div>
           <h2>Why "HADO"</h2>
+          <div class="text-box">
           <p>
             "HADO" stands for "Help a Doggy Out." The name itself was created
             by five beautiful students that I have the honor to teach. This
@@ -71,6 +74,7 @@ function About() {
                 </ol>
             </p>
           </p>
+          </div>
         </div>
       </div>
     </>

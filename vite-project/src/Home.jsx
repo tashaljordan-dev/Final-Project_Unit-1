@@ -12,21 +12,26 @@ function Home() {
 </div>
 
 <img src={logo} className="logo" alt="Logo" />
+        <div className="about-row">
 
         <h3>
           Welcome to our <strong>Help A Doggy Out</strong> app! We are dedicated to helping owners of diabetic dogs track blood sugar levels and insulin injections. 
           All of your data is securely stored and accessible for you to send to your veterinarian. Help a Doggy Out is designed to help you keep all of your doggy's health information in one central location. 
         </h3>
-    
+        </div>
 
         <h2> About this Project </h2>
         <div className="about-row">
 
     <img src={Headshot} className="headshot" alt="Headshot" />
-        <h3>This project was built using React, Vite, and React Router. It demonstrates basic routing and component structure. The app developer (that's me!) 
+        <h3>Dr. Tasha Jordan is an award winning STEM educator. She has taught in multiple school districts throughout the St. Louis region. She enjoys applying what she learns in LaunchCode to her students. 
+          
+          <p>
+          This project was built using React, Vite, and React Router. It demonstrates basic routing and component structure. The app developer (that's me!) 
           utilized HTML, CSS, and JavaScript to create this app.
+          </p>
           </h3> 
-        </div>
+          </div>
 
 
     </>
