@@ -29,7 +29,7 @@ function HealthForm() {
       return updated.slice(0, 10);
     });
 
-    alert("Your pet's data has beensaved successfully! Please scroll down to view your submission!");
+    alert("Your pet's data has been saved successfully! Please scroll down to view your submission!");
 
     setFormData({
       timeDate: "",
