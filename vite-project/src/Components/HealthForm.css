@@ -64,10 +64,10 @@ button:hover {
 }
 
 .card {
+  background: rgb(255, 255, 255) !important;
   border: 3px solid black;
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
-  background: rgb(255, 255, 255);
   margin: 40px auto; 
 }
