@@ -24,7 +24,7 @@ function Home() {
         <div className="about-row">
 
     <img src={Headshot} className="headshot" alt="Headshot" />
-        <h3>Dr. Tasha Jordan is an award winning STEM educator. She has taught in multiple school districts throughout the St. Louis region. She enjoys applying what she learns in LaunchCode to her students. 
+        <h3>Dr. Tasha Jordan is an award winning STEM educator. She has taught in multiple school districts throughout the St. Louis region. She enjoys applying what she learns in LaunchCode to her students. She earned a Doctor or Education in STEM Teaching and Learning from the University of Pittsburgh in June 2024. 
           
           <p>
           This project was built using React, Vite, and React Router. It demonstrates basic routing and component structure. The app developer (that's me!) 
