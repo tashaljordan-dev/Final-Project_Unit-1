@@ -6,6 +6,7 @@ import HealthForm from "./Components/HealthForm.jsx";
 import Recipes from "./Components/Recipes.jsx";
 import Resources from "./Components/Resources.jsx";
 import Footer from "./Footer.jsx";
+import Home from "./home.jsx";
 
 
 function App() {
