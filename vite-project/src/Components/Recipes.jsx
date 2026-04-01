@@ -59,7 +59,7 @@ function Recipes() {
         </div>
 
         <div className="about-row2">
-          <img src={blueberrytreat} className="picture" alt="Blueberry Yogurt  Treats" />
+          <img src={blueberrytreat} className="picture" alt="Blueberry Yogurt  Treats" width= "200"/>
 
           <div>
             <h3>Blueberry Yogurt Treats</h3>
