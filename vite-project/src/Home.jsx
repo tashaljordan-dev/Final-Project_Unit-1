@@ -20,19 +20,7 @@ function Home() {
         </h3>
         </div>
 
-        <h2> About this Project </h2>
-        <div className="about-row">
-
-    <img src={Headshot} className="headshot" alt="Headshot" />
-        <h3>Dr. Tasha Jordan is an award winning STEM educator. She has taught in multiple school districts throughout the St. Louis region. She enjoys applying what she learns in LaunchCode to her middle school computer science classroom. She earned a Doctor or Education in STEM Teaching and Learning from the University of Pittsburgh in June 2024. 
-          
-          <p>
-          This project was built using React, Vite, and React Router. It demonstrates basic routing and component structure. The app developer (that's me!) 
-          utilized HTML, CSS, and JavaScript to create this app.
-          </p>
-          </h3> 
-          </div>
-
+        
 
     </>
   );  

@@ -36,14 +36,7 @@ h3{
     font-weight: normal;
 }
 
-.headshot {
-  display: block;
-  margin: auto;
-  width: 200px;
-  border-radius: 50%; 
-  object-fit: cover;
-  border: 1px solid tan;
-}
+
 
 .about-row {
   display: flex;

@@ -50,3 +50,23 @@ h2 {
   max-width: 800px;
   margin: 20px auto;
 }
+
+.headshot {
+  display: block;
+  margin: auto;
+  width: 200px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 1px solid tan;
+}
+
+.about-row {
+  display: flex;
+  align-items: left;   
+  gap: 20px;             
+  background: rgba(200, 200, 200, 0.7); /* soft gray with transparency */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 20px auto;
+}

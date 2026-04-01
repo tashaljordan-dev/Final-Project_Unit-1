@@ -6,8 +6,11 @@ function HealthForm() {
     timeDate: "",
     bloodSugar: "",
     insulinDose: "",
+    food: "",
+    snack: "",
     mood: "",
     activity: "",
+    exercise: "",
     symptoms: "",
   });
 
@@ -35,8 +38,11 @@ function HealthForm() {
       timeDate: "",
       bloodSugar: "",
       insulinDose: "",
+      food: "",
+      snack: "",
       mood: "",
       activity: "",
+      exercise: "",
       symptoms: "",
     });
   };
@@ -74,6 +80,24 @@ function HealthForm() {
             required
           />
 
+          <label>Food</label>
+          <input
+            type="text"
+            name="food"
+            value={formData.food}
+            onChange={handleChange}
+            placeholder="e.g., 1 cup of dry food, 1/2 can of wet food..."
+          />
+
+          <label>Snack</label>
+          <input
+            type="text"
+            name="snack"
+            value={formData.snack}
+            onChange={handleChange}
+            placeholder="e.g., 1 treat, 1/4 cup of cooked chicken..."
+          />  
+
           <label>Mood</label>
           <select
             name="mood"
@@ -99,6 +123,18 @@ function HealthForm() {
             <option value="low">Low</option>
           </select>
 
+          <label> Exercise </label>
+          <select
+            name="exercise"
+            value={formData.exercise}
+            onChange={handleChange}
+          > 
+            <option value="">Select exercise</option>
+            <option value="walk">Walk</option>
+            <option value="play">Run</option>
+            <option value="none">None</option>
+          </select>
+
           <label>Symptoms</label>
           <textarea
             name="symptoms"
@@ -115,8 +151,11 @@ function HealthForm() {
           <p>Date & Time: {formData.timeDate}</p>
           <p>Blood Sugar Level: {formData.bloodSugar}</p>
           <p>Insulin Dose: {formData.insulinDose}</p>
+          <p>Food: {formData.food}</p>
+          <p>Snack: {formData.snack}</p>
           <p>Mood: {formData.mood}</p>
           <p>Activity Level: {formData.activity}</p>
+          <p>Exercise: {formData.exercise}</p>
           <p>Symptoms: {formData.symptoms}</p>
         </div>
       </div>
@@ -130,8 +169,11 @@ function HealthForm() {
             <p><strong>Date & Time:</strong> {entry.timeDate}</p>
             <p><strong>Blood Sugar:</strong> {entry.bloodSugar}</p>
             <p><strong>Insulin Dose:</strong> {entry.insulinDose}</p>
+            <p><strong>Food:</strong> {entry.food}</p>
+            <p><strong>Snack:</strong> {entry.snack}</p>
             <p><strong>Mood:</strong> {entry.mood}</p>
             <p><strong>Activity:</strong> {entry.activity}</p>
+            <p><strong>Exercise:</strong> {entry.exercise}</p>
             <p><strong>Symptoms:</strong> {entry.symptoms}</p>
           </div>
         ))}
