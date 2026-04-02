@@ -49,7 +49,6 @@ function HealthForm() {
 
   return (
     <div className="container">
-      <div>
         <div className ="column">
         <h2>Dog Health Check-In</h2>
 
@@ -146,7 +145,7 @@ function HealthForm() {
 
           <button type="submit">Save Entry</button>
         </form>
-        </div>
+
 <div className="column">
         <div className="live-preview">
           <h2>Live Preview</h2>
@@ -162,7 +161,6 @@ function HealthForm() {
         </div>
       </div>
       </div>
-      <div className="column">
 
       <div className="cards-container">
         <h2>Saved Check-Ins</h2>
@@ -180,9 +178,7 @@ function HealthForm() {
             <p><strong>Exercise:</strong> {entry.exercise}</p>
             <p><strong>Symptoms:</strong> {entry.symptoms}</p>
           </div>
-        
         ))}
-        </div>
       </div>
     </div>
   );
