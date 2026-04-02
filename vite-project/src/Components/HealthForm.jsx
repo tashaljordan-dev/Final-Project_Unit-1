@@ -48,10 +48,24 @@ function HealthForm() {
   };
 
   return (
-    <div className="container">
+    
         <div className ="column">
         <h2>Dog Health Check-In</h2>
-
+        <div className="column">
+        <div className="live-preview">
+          <h2>Live Preview</h2>
+          <p>Date & Time: {formData.timeDate}</p>
+          <p>Blood Sugar Level: {formData.bloodSugar}</p>
+          <p>Insulin Dose: {formData.insulinDose}</p>
+          <p>Food: {formData.food}</p>
+          <p>Snack: {formData.snack}</p>
+          <p>Mood: {formData.mood}</p>
+          <p>Activity Level: {formData.activity}</p>
+          <p>Exercise: {formData.exercise}</p>
+          <p>Symptoms: {formData.symptoms}</p>
+      </div>
+      </div>
+<div className="container">
         <form onSubmit={handleSubmit}>
           <label>Date & Time</label>
           <input
@@ -145,22 +159,8 @@ function HealthForm() {
 
           <button type="submit">Save Entry</button>
         </form>
+</div>
 
-<div className="column">
-        <div className="live-preview">
-          <h2>Live Preview</h2>
-          <p>Date & Time: {formData.timeDate}</p>
-          <p>Blood Sugar Level: {formData.bloodSugar}</p>
-          <p>Insulin Dose: {formData.insulinDose}</p>
-          <p>Food: {formData.food}</p>
-          <p>Snack: {formData.snack}</p>
-          <p>Mood: {formData.mood}</p>
-          <p>Activity Level: {formData.activity}</p>
-          <p>Exercise: {formData.exercise}</p>
-          <p>Symptoms: {formData.symptoms}</p>
-        </div>
-      </div>
-      </div>
 
       <div className="cards-container">
         <h2>Saved Check-Ins</h2>
