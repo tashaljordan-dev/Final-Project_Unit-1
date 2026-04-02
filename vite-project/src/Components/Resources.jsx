@@ -18,7 +18,7 @@ function Resources() {
             <h3>Insulin Tips</h3>
 
             <ul>
-              <li>Always test your pup <strong>BEFORE</strong>a feeding to ensure proper blood sugar levels.</li>
+              <li>Always test your pup <strong>BEFORE</strong> a feeding to ensure proper blood sugar levels.</li>
               <li>Use a consistent routine for insulin administration to help maintain stable blood sugar levels.</li>
               <li>Store insulin properly according to the manufacturer's instructions to maintain its effectiveness.</li>
               <li>Monitor your dog's blood sugar levels regularly to adjust insulin doses as needed.</li>
@@ -39,6 +39,16 @@ function Resources() {
               <li>Dispose of used syringes safely in a sharps container to prevent injury and contamination.</li>
               <li>Keep syringes out of reach of children and pets to prevent accidental injury.</li>
               <li>Consult with your veterinarian for proper syringe usage and disposal methods.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="about-row2">
+          <div>
+            <h3>Veterinarians & Vet Techs (St. Louis Region Only) </h3>
+            <ul>
+              <li> Dr. Britt | Veterinarian | Webster Groves Veterinary Hospital | (314) 968-4310</li>
+              <li> Brooke | Vet Tech | In home insulin shots </li>
             </ul>
           </div>
         </div>

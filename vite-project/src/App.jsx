@@ -16,8 +16,8 @@ function App() {
       style={{backgroundColor: "tan", padding: "10px", display: "flex", justifyContent: "right", gap: "10px", fontSize: "18px", fontWeight: "bold", color: "black"}}>
         <Link to="/">Home</Link> |{" "}
         <Link to="/about">About</Link>| {" "}
-        <Link to="/check-in">Health Check-In</Link>{" "}  
-        <Link to="/recipes">Recipes</Link>{" "}
+        <Link to="/check-in">Health Check-In</Link>| {" "}  
+        <Link to="/recipes">Recipes</Link>| {" "}
         <Link to="/resources">Resources</Link>{" "}
 
       </nav>

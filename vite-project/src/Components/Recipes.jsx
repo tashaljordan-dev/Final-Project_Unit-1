@@ -12,7 +12,7 @@ function Recipes() {
       <div>
         <h2>Diabetic Friendly Recipes</h2>
 
-        <div className="about-row2">
+        <div className="about-row3">
           <img src={sweetpotatotreat} className="picture" alt="Sweet Potato Treats" />
 
           <div>
@@ -38,7 +38,7 @@ function Recipes() {
           </div>
         </div>
 
-        <div className="about-row2">
+        <div className="about-row3">
           <img src={peanutbuttertreat} className="picture" alt="Sweet Potato Treats" />
 
           <div>
@@ -58,7 +58,7 @@ function Recipes() {
           </div>
         </div>
 
-        <div className="about-row2">
+        <div className="about-row3">
           <img src={blueberrytreat} className="picture" alt="Blueberry Yogurt  Treats" width= "200"/>
 
           <div>
@@ -79,7 +79,7 @@ function Recipes() {
           </div>
         </div>
 
-        <div className="about-row2">
+        <div className="about-row3">
           <img src={dogtreatmold} className="picture" alt="Dog Treat Mold" />
 
           <div>

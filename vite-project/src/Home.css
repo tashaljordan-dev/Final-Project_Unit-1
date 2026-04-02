@@ -36,7 +36,6 @@ h3{
     font-weight: normal;
 }
 
-
 .about-row {
   display: flex;
   align-items: left;   
@@ -44,14 +43,11 @@ h3{
   background: rgb(200, 200, 200, 0.7); /* soft gray with transparency */
   padding: 20px;
   border-radius: 12px;
-  max-width: 800px;
-  margin: 20px auto;
 }
 
-.about-row h2 {
+.about-row{
   margin: 0;
   text-align: left;
-  
 }
 
 body {
