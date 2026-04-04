@@ -2,7 +2,7 @@ import "./HealthForm.css";
 import { useState } from "react";
 
 function HealthForm() {
-  const [formData, setFormData] = useState({
+  const initialFormState = {
     timeDate: "",
     bloodSugar: "",
     insulinDose: "",
@@ -12,16 +12,17 @@ function HealthForm() {
     activity: "",
     exercise: "",
     symptoms: "",
-  });
+  };
 
-  const [entries, setEntries] = useState([]); // ✅ New state for cards
+  const [formData, setFormData] = useState(initialFormState);
+  const [entries, setEntries] = useState([]);
 
+  /* -----------------------------
+     Handlers
+  ----------------------------- */
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
@@ -29,43 +30,25 @@ function HealthForm() {
 
     setEntries((prev) => {
       const updated = [formData, ...prev];
-      return updated.slice(0, 10);
+      return updated.slice(0, 10); // keep max 10
     });
 
-    alert("Your pet's data has been saved successfully! Please scroll down to view your submission!");
+    alert(
+      "Your pet's data has been saved successfully! Please scroll down to view your submission!"
+    );
 
-    setFormData({
-      timeDate: "",
-      bloodSugar: "",
-      insulinDose: "",
-      food: "",
-      snack: "",
-      mood: "",
-      activity: "",
-      exercise: "",
-      symptoms: "",
-    });
+    setFormData(initialFormState);
   };
 
+  /* -----------------------------
+     Render
+  ----------------------------- */
   return (
-    
-        <div className ="column">
+    <div className="form-container">
+      <div className="container">
+        {/* COLUMN 1 — FORM */}
         <h2>Dog Health Check-In</h2>
-        <div className="column">
-        <div className="live-preview">
-          <h2>Live Preview</h2>
-          <p>Date & Time: {formData.timeDate}</p>
-          <p>Blood Sugar Level: {formData.bloodSugar}</p>
-          <p>Insulin Dose: {formData.insulinDose}</p>
-          <p>Food: {formData.food}</p>
-          <p>Snack: {formData.snack}</p>
-          <p>Mood: {formData.mood}</p>
-          <p>Activity Level: {formData.activity}</p>
-          <p>Exercise: {formData.exercise}</p>
-          <p>Symptoms: {formData.symptoms}</p>
-      </div>
-      </div>
-<div className="container">
+
         <form onSubmit={handleSubmit}>
           <label>Date & Time</label>
           <input
@@ -73,8 +56,7 @@ function HealthForm() {
             name="timeDate"
             value={formData.timeDate}
             onChange={handleChange}
-            required
-          />
+            required />
 
           <label>Blood Sugar (mg/dL)</label>
           <input
@@ -82,8 +64,7 @@ function HealthForm() {
             name="bloodSugar"
             value={formData.bloodSugar}
             onChange={handleChange}
-            required
-          />
+            required />
 
           <label>Insulin Dose (units)</label>
           <input
@@ -91,8 +72,7 @@ function HealthForm() {
             name="insulinDose"
             value={formData.insulinDose}
             onChange={handleChange}
-            required
-          />
+            required />
 
           <label>Food</label>
           <input
@@ -100,8 +80,7 @@ function HealthForm() {
             name="food"
             value={formData.food}
             onChange={handleChange}
-            placeholder="e.g., 1 cup of dry food, 1/2 can of wet food..."
-          />
+            placeholder="e.g., 1 cup dry food, 1/2 can wet food..." />
 
           <label>Snack</label>
           <input
@@ -109,15 +88,10 @@ function HealthForm() {
             name="snack"
             value={formData.snack}
             onChange={handleChange}
-            placeholder="e.g., 1 treat, 1/4 cup of cooked chicken..."
-          />  
+            placeholder="e.g., 1 treat, 1/4 cup cooked chicken..." />
 
           <label>Mood</label>
-          <select
-            name="mood"
-            value={formData.mood}
-            onChange={handleChange}
-          >
+          <select name="mood" value={formData.mood} onChange={handleChange}>
             <option value="">Select mood</option>
             <option value="happy">Happy</option>
             <option value="normal">Normal</option>
@@ -126,23 +100,15 @@ function HealthForm() {
           </select>
 
           <label>Activity Level</label>
-          <select
-            name="activity"
-            value={formData.activity}
-            onChange={handleChange}
-          >
+          <select name="activity" value={formData.activity} onChange={handleChange}>
             <option value="">Select activity</option>
             <option value="high">High</option>
             <option value="medium">Medium</option>
             <option value="low">Low</option>
           </select>
 
-          <label> Exercise </label>
-          <select
-            name="exercise"
-            value={formData.exercise}
-            onChange={handleChange}
-          > 
+          <label>Exercise</label>
+          <select name="exercise" value={formData.exercise} onChange={handleChange}>
             <option value="">Select exercise</option>
             <option value="walk">Walk</option>
             <option value="play">Run</option>
@@ -154,31 +120,45 @@ function HealthForm() {
             name="symptoms"
             value={formData.symptoms}
             onChange={handleChange}
-            placeholder="e.g., vomiting, diarrhea, excessive thirst, shaking..."
-          />
+            placeholder="e.g., vomiting, diarrhea, excessive thirst, shaking..." />
 
           <button type="submit">Save Entry</button>
         </form>
-</div>
+      </div>
 
+      <div className="container">
+        {/* COLUMN 2 — LIVE PREVIEW */}
+        <div className="live-preview">
+          <h2>Live Preview</h2>
+          <p>Date & Time: {formData.timeDate}</p>
+          <p>Blood Sugar Level: {formData.bloodSugar}</p>
+          <p>Insulin Dose: {formData.insulinDose}</p>
+          <p>Food: {formData.food}</p>
+          <p>Snack: {formData.snack}</p>
+          <p>Mood: {formData.mood}</p>
+          <p>Activity Level: {formData.activity}</p>
+          <p>Exercise: {formData.exercise}</p>
+          <p>Symptoms: {formData.symptoms}</p>
+        </div>
+      </div>
 
-      <div className="cards-container">
-        <h2>Saved Check-Ins</h2>
-        {entries.length === 0 && <p>No entries saved yet.</p>}
+      {/* COLUMN 3 — SAVED CARDS */}
+      <div className="container">
+        <div className="cards-container">
+          <h2>Saved Check-Ins</h2>
 
-        {entries.map((entry, index) => (
-          <div key={index} className="card">
-            <p><strong>Date & Time:</strong> {entry.timeDate}</p>
-            <p><strong>Blood Sugar:</strong> {entry.bloodSugar}</p>
-            <p><strong>Insulin Dose:</strong> {entry.insulinDose}</p>
-            <p><strong>Food:</strong> {entry.food}</p>
-            <p><strong>Snack:</strong> {entry.snack}</p>
-            <p><strong>Mood:</strong> {entry.mood}</p>
-            <p><strong>Activity:</strong> {entry.activity}</p>
-            <p><strong>Exercise:</strong> {entry.exercise}</p>
-            <p><strong>Symptoms:</strong> {entry.symptoms}</p>
-          </div>
-        ))}
+          {entries.length === 0 && <p>No entries saved yet.</p>}
+
+          {entries.map((entry, index) => (
+            <div key={index} className="card">
+              {Object.entries(entry).map(([key, value]) => (
+                <p key={key}>
+                  <strong>{key.replace(/([A-Z])/g, " $1")}:</strong> {value}
+                </p>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

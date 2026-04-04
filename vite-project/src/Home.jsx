@@ -8,7 +8,7 @@ function Home() {
     <>
     
 <div className="title-box">
-  <h1> Welcome to Help A Doggy Out!</h1>
+  <h1> Welcome to Help A Doggy Out! #HADO</h1>
 </div>
 <div className="about-row">
   <img src={logo} className="logo" alt="Logo" />

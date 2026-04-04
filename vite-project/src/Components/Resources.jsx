@@ -9,7 +9,7 @@ function Resources() {
   return (
     <>
       <div>
-        <h2>Resources</h2>
+        <h2 className="fancy-heading">Resources</h2>
 
         <div className="about-row2">
           <img src={insulintips} className="resourcesPicture" alt="Insulin Tips" />
