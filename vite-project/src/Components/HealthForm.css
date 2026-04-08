@@ -149,3 +149,25 @@ button:hover {
     max-height: none;
   }
 }
+
+.card-actions {
+  margin-top: 10px;
+}
+
+.card-actions button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer; 
+}
+
+.edit-btn {
+  background-color: gold;
+  color: white;
+  margin-right: 8px;
+}
+
+.delete-btn {
+  background-color: crimson;
+  color: white;
+}

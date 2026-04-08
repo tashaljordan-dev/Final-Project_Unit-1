@@ -16,10 +16,20 @@ function HealthForm() {
 
   const [formData, setFormData] = useState(initialFormState);
   const [entries, setEntries] = useState([]);
+  const [isEditing, setIsEditing] = useState(null);
 
-  /* -----------------------------
-     Handlers
-  ----------------------------- */
+  const onDelete = (index) => {
+    const updated = entries.filter((_, i) => i !== index);
+    setEntries(updated);
+    localStorage.setItem("healthEntries", JSON.stringify(updated));
+  };
+
+  const onEdit = (index) => {
+    const entryToEdit = entries[index];
+    setFormData(entryToEdit);
+    setIsEditing(index);
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -38,6 +48,7 @@ function HealthForm() {
     );
 
     setFormData(initialFormState);
+    setIsEditing(null);
   };
 
   /* -----------------------------
@@ -156,6 +167,21 @@ function HealthForm() {
                   <strong>{key.replace(/([A-Z])/g, " $1")}:</strong> {value}
                 </p>
               ))}
+              <div className = "card-actions">
+              <button 
+              className="delete-btn"
+              onClick={()=> onDelete(index)}
+              >
+                Delete 
+              </button>
+
+              <button 
+              className = "edit-btn"
+              onClick={()=> onEdit(index)}
+              >
+                Edit 
+              </button>
+              </div>
             </div>
           ))}
         </div>

@@ -66,3 +66,25 @@ h3{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
 }
 
+.vet-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.vet-table th,
+.vet-table td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.vet-table th {
+  background-color: #d4b46a; /* warm gold */
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.vet-table tr:nth-child(even) {
+  background-color: #f9f5ec; /* soft warm neutral */
+}

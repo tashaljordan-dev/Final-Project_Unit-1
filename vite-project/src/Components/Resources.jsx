@@ -46,10 +46,32 @@ function Resources() {
         <div className="about-row2">
           <div>
             <h3>Veterinarians & Vet Techs (St. Louis Region Only) </h3>
-            <ul>
-              <li> Dr. Britt | Veterinarian | Webster Groves Veterinary Hospital | (314) 968-4310</li>
-              <li> Brooke | Vet Tech | In home insulin shots </li>
-            </ul>
+            <table className="vet-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Role</th>
+      <th>Location / Service</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Dr. Britt</td>
+      <td>Veterinarian</td>
+      <td>Webster Groves Veterinary Hospital</td>
+      <td>(314) 968-4310</td>
+    </tr>
+
+    <tr>
+      <td>Brooke</td>
+      <td>Vet Tech</td>
+      <td>In‑home insulin shots</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
           </div>
         </div>
       </div>
