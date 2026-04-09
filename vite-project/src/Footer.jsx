@@ -13,6 +13,10 @@ function Footer() {
         <a href="https://www.linkedin.com/in/drtashajordan/" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
+         <span> • </span>
+         <a href ="https://www.facebook.com/share/g/1CGxRtjgZ1/" target="_blank" rel="noopener noreferrer">
+          Facebook Diabetic Dog Chat
+        </a>
       </div>
     </footer>
   );

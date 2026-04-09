@@ -11,7 +11,8 @@ function Home() {
   <h1> Welcome to Help A Doggy Out! #HADO</h1>
 </div>
 <div className="about-row">
-  <img src={logo} className="logo" alt="Logo" />
+  <img src={logo} 
+  alt="Taz the chihuahua smiling with his tongue out" className="logo" />
   <h3>
     Welcome to our <strong>Help A Doggy Out</strong> app! We are dedicated to helping owners of diabetic dogs track blood sugar levels and insulin injections. 
     All of your data is securely stored and accessible for you to send to your veterinarian. Help a Doggy Out is designed to help you keep all of your doggy's health information in one central location.

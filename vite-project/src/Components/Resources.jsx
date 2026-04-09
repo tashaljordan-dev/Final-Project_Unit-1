@@ -2,47 +2,50 @@ import { useState } from "react";
 import "./Resources.css";
 import syringeinfo from "../assets/syringeinfo.jpg";
 import insulintips from "../assets/insulintips.jpg";
+import ExpandMenu from "./ExpandMenu";
 
 
 
 function Resources() {
   return (
     <>
-      <div>
-        <h2 className="fancy-heading">Resources</h2>
+      <section>
+        <h2> Diabetic Care Info </h2>
+      <ExpandMenu title="Blood Sugar Levels">
+        <ul>
+          <li>Healthy ranges vary, but most diabetic dogs aim for 100–250 mg/dL depending on timing around meals and insulin.</li>
+          <li>Always check your dog's specific target range with your veterinarian.</li>
+          <li>Monitor your dog's blood sugar levels regularly to ensure they are within the recommended range and adjust care as needed with your vet's guidance.</li>
+        </ul>
+      </ExpandMenu>
 
-        <div className="about-row2">
-          <img src={insulintips} className="resourcesPicture" alt="Insulin Tips" />
-    
-          <div>
-            <h3>Insulin Tips</h3>
+      <ExpandMenu title="Insulin">
+        <ul>
+          <li>Common types include Vetsulin, NPH, and glargine. Always use the type prescribed by your vet.</li>
+          <li>Dosage is highly individualized based on your dog's weight, blood sugar levels, and response to insulin. Follow your veterinarian's instructions closely.</li>
+          <li>Administer insulin injections as directed by your veterinarian, typically every 12 hours, and monitor your dog's response to adjust dosage if necessary.</li>
+        </ul>
+      </ExpandMenu>
 
-            <ul>
-              <li>Always test your pup <strong>BEFORE</strong> a feeding to ensure proper blood sugar levels.</li>
-              <li>Use a consistent routine for insulin administration to help maintain stable blood sugar levels.</li>
-              <li>Store insulin properly according to the manufacturer's instructions to maintain its effectiveness.</li>
-              <li>Monitor your dog's blood sugar levels regularly to adjust insulin doses as needed.</li>
-              <li>Be aware of signs of hypoglycemia (low blood sugar) and have a plan in place to treat it quickly.</li>
-              <li>Rotate injection sites to prevent tissue damage.</li>
-            </ul>
-          </div>
-        </div>
+      <ExpandMenu title="When to Use Insulin">
+        <ul>
+          <li>Typically given after meals, every 12 hours, but timing must match your vet’s instructions.</li>
+          <li>Administer insulin at the same times each day to maintain consistent blood sugar control.</li>
+          <li>Always follow your veterinarian's guidance on insulin administration timing to ensure optimal management of your dog's diabetes.</li>
+          <li>Never give insulin or change the insulin dosage without veterinary guidance, as incorrect timing or dosage can lead to dangerous blood sugar levels. </li>
+        </ul>
+      </ExpandMenu>
 
-        <div className="about-row2">
-          <img src={syringeinfo} className="resourcesPicture" alt="Syringe Information" />
-
-          <div>
-            <h3>Syringe Information</h3>
-            <ul>
-              <li>Always use a new syringe after every dosage</li>
-              <li>Use the correct syringe size for your dog's insulin dose to ensure accurate dosing.</li>
-              <li>Dispose of used syringes safely in a sharps container to prevent injury and contamination.</li>
-              <li>Keep syringes out of reach of children and pets to prevent accidental injury.</li>
-              <li>Consult with your veterinarian for proper syringe usage and disposal methods.</li>
-            </ul>
-          </div>
-        </div>
-
+      <ExpandMenu title="Foods to Feed Your Dog">
+        <ul>
+          <li>High‑fiber, low‑fat diets with consistent portions.</li>
+          <li>Avoid sugary treats and table scraps.</li>
+          <li>Consult your veterinarian for specific dietary recommendations tailored to your dog's needs.</li>
+          <li>Consider diabetic‑friendly treats like sweet potato or peanut butter (in moderation) for blood sugar support during hypoglycemic episodes.</li>
+        </ul>
+      </ExpandMenu>
+    </section>
+    <section>
         <div className="about-row2">
           <div>
             <h3>Veterinarians & Vet Techs (St. Louis Region Only) </h3>
@@ -74,7 +77,7 @@ function Resources() {
 </table>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
