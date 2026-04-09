@@ -78,14 +78,14 @@ button {
   border: none;
   border-radius: 10px;
   background-color: rgba(165, 42, 42, 0.926);
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 button:hover {
-  background-color: #430463;
+  background-color: rgb(140, 210, 193);
 }
 
 /* -------------------------

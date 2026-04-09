@@ -5,7 +5,7 @@
 .expand-header {
   width: 100%;
   text-align: left;
-  background: #d4b46a; /* warm gold */
+  background:tan;
   color: rgb(0, 0, 0);
   padding: 12px;
   border: none;
@@ -15,9 +15,9 @@
 }
 
 .expand-content {
-  background: #fff8e6; /* soft warm tone */
+  background: #fff8e6;
   padding: 12px;
-  border-left: 3px solid #d4b46a;
+  border-left: 3px solid rgb(140, 210, 193);
   border-radius: 0 0 6px 6px;
   margin-top: 4px;
 }
