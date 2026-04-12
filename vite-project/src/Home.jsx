@@ -19,8 +19,10 @@ function Home() {
   </h3>
 </div>
 
-        
-
+<div className="title-box">
+  <h2> Our Mission: </h2>
+  <h3>To help pet parents care for diabetic dogs with confidence, compassion, and clear daily tools — inspired by the love and resilience of Taz Mania Angel Jordan.  </h3>
+</div>
     </>
   );  
 }

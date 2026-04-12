@@ -164,7 +164,7 @@ function HealthForm() {
             <div key={index} className="card">
               {Object.entries(entry).map(([key, value]) => (
                 <p key={key}>
-                  <strong>{key.replace(/([A-Z])/g, " $1")}:</strong> {value}
+                  <strong>{key.replace(/([A-Z])/g, " $1").trim().toLowerCase().replace(/^./, (char) => char.toUpperCase())}:</strong> {value}
                 </p>
               ))}
               <div className = "card-actions">

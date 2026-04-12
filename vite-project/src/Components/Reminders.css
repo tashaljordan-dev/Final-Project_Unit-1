@@ -1,0 +1,99 @@
+.curve-section {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+.curve-section button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #000000;
+  color: white;
+  cursor: pointer;
+}
+
+.curve-section button:hover {
+  background: #088a8a;
+}
+
+.curve-box {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.curve-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.curve-box button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #000000;
+  color: white;
+  cursor: pointer;
+}
+
+.curve-box button:hover {
+  background:  rgb(140, 210, 193);
+}
+
+.curve-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.curve-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.reminders-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* LEFT COLUMN */
+.reminders-left {
+  flex: 1;
+  max-width: 45%;
+}
+
+/* RIGHT COLUMN */
+.reminders-right {
+  flex: 1;
+  max-width: 45%;
+}
+
+/* Make sure cards don’t stretch full width */
+.reminder-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reminder-card {
+  background: rgba(255,255,255,0.9);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+

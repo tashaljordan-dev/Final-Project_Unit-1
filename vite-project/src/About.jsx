@@ -14,7 +14,7 @@ function About() {
       <div className = "about-row">
         <img src={dogPic} className="picture" alt="Taz" />
         <h3>
-          <strong>Help a Doggy Out</strong> is dedicated to my currently 15 year old diabetic chihuahua <strong>Taz Mania Angel Jordan</strong>. I adopted Taz from the APA in St. Louis--he was a stray that had been surrendered by his previous owners. They told me that he was 25 pounds when he came in. <strong>Imagine that...A 25 pound chihuahua!</strong>
+          <strong>Help a Doggy Out</strong> is dedicated to my currently 15 year old diabetic chihuahua <strong>Taz Mania Angel Jordan</strong>. I adopted Taz from the APA in St. Louis--he was a stray that had been surrendered by his previous owners. They told me that he was 25 pounds when he came in. <strong>Imagine that!</strong>...a <strong> 25 pound chihuahua!</strong>
                <p> When he turned 12, he began peeing in the house. I <strong> assumed </strong> it was because he was an old man. But when he peed on the couch, I knew something was wrong.
               Ten minutes into the vet appointment, the vet confirmed what Google had already put into my brain...<strong>"Your dog is diabetic." </strong>
               I'll never forget the look on the vet's face. I later found out that many owners surrender their dogs when they hear the news.<strong> But... I already loved him so there's that! </strong> </p>

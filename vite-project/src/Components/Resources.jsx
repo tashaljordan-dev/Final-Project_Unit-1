@@ -11,7 +11,7 @@ function Resources() {
     <>
       <section>
         <h2> Diabetic Care Info </h2>
-      <ExpandMenu title="Blood Sugar Levels">
+      <ExpandMenu title="📈 Blood Sugar Levels">
         <ul>
           <li>Healthy ranges vary, but most diabetic dogs aim for 100–250 mg/dL depending on timing around meals and insulin.</li>
           <li>Always check your dog's specific target range with your veterinarian.</li>
@@ -19,7 +19,7 @@ function Resources() {
         </ul>
       </ExpandMenu>
 
-      <ExpandMenu title="Insulin">
+      <ExpandMenu title="💉 Insulin">
         <ul>
           <li>Common types include Vetsulin, NPH, and glargine. Always use the type prescribed by your vet.</li>
           <li>Dosage is highly individualized based on your dog's weight, blood sugar levels, and response to insulin. Follow your veterinarian's instructions closely.</li>
@@ -27,7 +27,7 @@ function Resources() {
         </ul>
       </ExpandMenu>
 
-      <ExpandMenu title="When to Use Insulin">
+      <ExpandMenu title=" 🕓 When to Use Insulin">
         <ul>
           <li>Typically given after meals, every 12 hours, but timing must match your vet’s instructions.</li>
           <li>Administer insulin at the same times each day to maintain consistent blood sugar control.</li>
@@ -36,19 +36,24 @@ function Resources() {
         </ul>
       </ExpandMenu>
 
-      <ExpandMenu title="Foods to Feed Your Dog">
+      <ExpandMenu title="🍽️ Foods to Feed Your Dog">
         <ul>
           <li>High‑fiber, low‑fat diets with consistent portions.</li>
           <li>Avoid sugary treats and table scraps.</li>
           <li>Consult your veterinarian for specific dietary recommendations tailored to your dog's needs.</li>
           <li>Consider diabetic‑friendly treats like sweet potato or peanut butter (in moderation) for blood sugar support during hypoglycemic episodes.</li>
+          <li>Food Options:
+            <ul>
+          <li> Royal Canin Glycobalance</li>
+          <li> Hill's Prescription Diet w/d</li>
+          <li> Blue Buffalo Natural Veterinary Diet W+U</li>
+        </ul>
+        </li>
         </ul>
       </ExpandMenu>
-    </section>
-    <section>
-        <div className="about-row2">
-          <div>
-            <h3>Veterinarians & Vet Techs (St. Louis Region Only) </h3>
+
+      <ExpandMenu title = "🩺 Veterinarians & Vet Techs (St. Louis Region Only)">
+
             <table className="vet-table">
   <thead>
     <tr>
@@ -75,9 +80,17 @@ function Resources() {
     </tr>
   </tbody>
 </table>
-          </div>
-        </div>
-      </section>
+</ExpandMenu>
+
+<ExpandMenu title="💖 Words of Encouragement">
+  <ul>
+    <li>You're doing an amazing job caring for your diabetic dog! Remember, managing diabetes is a journey, and every step you take is a positive one for your furry friend.</li>
+    <li> When in doubt, <strong> ALWAYS </strong> consult your vet. While Facebook groups can be helpful, your veterinarian is the <strong>BEST </strong>resource for your dog's specific needs.</li>
+    <li> Always remember that <strong> YOU </strong> are not alone in this journey.</li>
+    <li> Celebrate the small victories, like stable blood sugar readings or your dog enjoying their new treats. Every win counts!</li>
+  </ul>
+</ExpandMenu>
+    </section>
     </>
   );
 }
