@@ -28,6 +28,17 @@ function BGCurve() {
     localStorage.setItem("curveData", JSON.stringify(updated));
   };
 
+  // Start a brand new curve (delete all old data)
+  const startNewCurve = () => {
+    const confirmReset = window.confirm(
+      "Start a new curve? This will delete all previous readings."
+    );
+    if (!confirmReset) return;
+
+    setCurveData([]);
+    localStorage.removeItem("curveData");
+  };
+
   // Download CSV
   const downloadCSV = () => {
     const header = "Date,Time,Blood Sugar\n";
@@ -52,6 +63,7 @@ function BGCurve() {
 
       <button onClick={addCurveEntry}>Add BG Reading</button>
       <button onClick={downloadCSV}>Download Curve Data</button>
+      <button onClick={startNewCurve}>Start New Curve</button>
 
       {curveData.length > 0 ? (
         <ul className="curve-list">
