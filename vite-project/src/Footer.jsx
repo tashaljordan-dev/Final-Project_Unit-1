@@ -8,8 +8,6 @@ function Footer() {
     <span>|</span>
     <a href="https://linkedin.com/">LinkedIn</a>
     <span>|</span>
-    <a href="https://facebook.com/">Facebook</a>
-    <span>|</span>
     <a href="/chat">Diabetic Dog Chat</a>
   </div>
 
