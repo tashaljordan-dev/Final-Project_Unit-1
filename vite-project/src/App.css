@@ -9,6 +9,17 @@
   color: black;
 }
 
+@media (max-width: 600px) {
+  .nav-bar {
+    gap: 8px;
+  }
+
+  .nav-bar a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}
+
 .logo {
   display: block;
   margin: auto;
@@ -38,6 +49,8 @@ h1 {
 .nav-bar a:hover {
   color: rgb(140, 210, 193); /* matches your palette */
 }
+
+
 
 .footer {
   text-align: center;
