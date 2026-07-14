@@ -15,6 +15,16 @@ function HealthForm() {
     symptoms: "",
   };
 
+  // load saved entries 
+
+  useEffect(() => {
+    const saved = localStorage.getItem("healthEntries")
+    if (saved) {
+      setEntries(JSON.parse(saved))
+    }
+  }, []);
+
+
   const [formData, setFormData] = useState(initialFormState);
   const [entries, setEntries] = useState([]);
   const [isEditing, setIsEditing] = useState(null);
