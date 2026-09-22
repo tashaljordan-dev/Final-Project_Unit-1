@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Home from "./Home.jsx";   
 import About from "./About.jsx"; 
@@ -8,8 +8,9 @@ import Resources from "./Components/Resources.jsx";
 import Footer from "./Footer.jsx";
 import Reminders from "./Components/Reminders.jsx";
 import BGCurve from "./Components/BGCurve.jsx";
-import HeroDogForm from "./Components/HeroDogForm.jsx";
-import HeroDogBoard from "./Components/HeroDogBoard.jsx";
+import HeroDogForm from "./components/HeroDogForm";
+import HeroDogBoard from "./components/HeroDogBoard";
+
 
 function App() {
   return (
@@ -32,10 +33,9 @@ function App() {
         <Link to="/recipes">Recipes</Link>| {" "}
         <Link to="/resources">Resources</Link>|{" "}
         <Link to="/reminders">Reminders</Link>| {" "}
-        <Link to="/bg-curve">BG Curve</Link>| {" "}
-        <Link to="/hero-dog-board">Hero Board</Link>| {" "}
-        <Link to="/hero-dog-form">Add Hero Dog</Link>
-        
+        <Link to="/bg-curve">BG Curve</Link>
+        <Link to="/hero-dog-form">Add Hero Dog</Link> |{" "}
+        <Link to="/hero-dog-board">Hero Board</Link>
 
 
       </nav>
@@ -48,8 +48,8 @@ function App() {
         <Route path="/resources" element={<Resources />}/>
         <Route path="/reminders" element={<Reminders />} />
         <Route path="/bg-curve" element={<BGCurve />} />
-        <Route path="/hero-dog-board" element={<HeroDogBoard />} />
         <Route path="/hero-dog-form" element={<HeroDogForm />} />
+        <Route path="/hero-dog-board" element={<HeroDogBoard />} />
       </Routes>
     
           <Footer />
