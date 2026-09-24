@@ -1,6 +1,6 @@
 # Pet Health App – React (Vite) + Spring Boot
 
-This project is a full‑stack application designed to support pet health tracking, daily check‑ins, BG curve logging, recipes, resources, reminders, and a Hero Dog feature connected to a Spring Boot backend API. The goal is to create a clean, modular, and responsive interface for managing pet wellness.
+Hero Dog is a full‑stack pet‑wellness application designed to support daily health tracking, BG curve logging, recipes, resources, reminders, and a dedicated Hero Dog board that celebrates diabetic dogs and their stories. The platform provides a clean, modular, and responsive interface built with React and powered by a Spring Boot API, allowing users to create, view, and manage pet‑health data with ease. By integrating structured wellness tools with an uplifting community feature, the project demonstrates practical full‑stack development skills, RESTful API design, database modeling, and thoughtful UI/UX for real‑world pet care.
 
 ## Features
 - Multi‑page navigation using React Router
@@ -11,7 +11,9 @@ This project is a full‑stack application designed to support pet health tracki
 - Custom CSS modules for styling
 
 ## Tech Stack 
+# Frontend
 - React (Vite)
+- Axios
 - JavaScript 
 - React Router
 - Fetch API for backend communication 
@@ -35,6 +37,7 @@ The backend is built using Spring Boot, providing RESTful endpoints for Hero Dog
 - CORS enabled for Vite frontend
 
 ## Tech Stack
+# Backend
 - Java 17+
 - Spring Boot
 - Spring Web
@@ -44,18 +47,50 @@ The backend is built using Spring Boot, providing RESTful endpoints for Hero Dog
 
 localhost:8080
 
-# React + Vite
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tools & Infrastructure
+- Netlify (Frontend Deployment)
+- MySQL Workbench
+- Postman (API Testing)
+- Git & GitHub
 
-Currently, two official plugins are available:
+## Installation & Setup (Run Locally)
+1. Clone the repository 
+git clone <your-repo-url>
+cd <project-folder>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+2. Backend Setup (Spring Boot)
+# A. Configure MySQL
+1. Create a database
+CREATE DATABASE hero_dog_db;
 
-## React Compiler
+2. Update your application.properties: 
+spring.datasource.url=jdbc:mysql://localhost:3306/hero_dog_db
+spring.datasource.username=YOUR_USERNAME
+spring.datasource.password=YOUR_PASSWORD
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# B. Run the Backend 
+./mvnw spring-boot:run
 
-## Expanding the ESLint configuration
+Your API will run at: http://localhost:8080/api/herodogs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Frontend Setup (React/Vite)
+# A. Install Dependencies
+npm install 
+# B. Run the Frontend 
+npm run dev
+
+Your app will run at: http://localhost:5173
+
+## Wireframes
+Homepage Wireframe: https://1drv.ms/o/c/83d78e3f7eff39bc/IgDoPns8YA6AQpGHHLSbTMCqAVrTqKEO2omN5ui7X2jfFQU?e=FJxHeA							
+HeroDog Card Wireframe: https://drive.google.com/file/d/19RYNQV0TixG-HzA2IIv8ihg-jcNtCVlu/view?usp=sharing	
+
+## ER Diagram 
+![ER Diagram](./public/ER Diagram.png)
+
+## Future Features
+- Edit/Update Hero Dog entries: Add a form and PUT endpoint for updating dog details.
+- Search & filtering: Filter dogs by breed, age, or years diabetic.
+- Pagination or infinite scroll: Improve performance as the list grows.
