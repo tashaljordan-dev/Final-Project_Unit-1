@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getHeroDogs, deleteHeroDog } from "../api/heroDogApi.js";
+import EditDogForm from "./EditDogForm";
 
 // --- Inline Styles ---
 const cardStyle = {
@@ -43,9 +44,9 @@ const buttonStyle = {
   cursor: "pointer"
 };
 
-
 function HeroDogBoard() {
   const [dogs, setDogs] = useState([]);
+  const [editingDog, setEditingDog] = useState(null);
 
   useEffect(() => {
     getHeroDogs()
@@ -63,6 +64,19 @@ function HeroDogBoard() {
         Number of Hero Dogs: {dogs.length}
       </h2>
 
+      {/* ⭐ EDIT FORM (only shows when editingDog is set) */}
+      {editingDog && (
+        <EditDogForm
+          dog={editingDog}
+          onUpdate={(updatedDog) => {
+            setDogs(dogs.map((d) => (d.id === updatedDog.id ? updatedDog : d)));
+            setEditingDog(null);
+          }}
+          onCancel={() => setEditingDog(null)}
+        />
+      )}
+
+      {/* ⭐ DOG CARDS */}
       {dogs.map((dog) => (
         <div key={dog.id} style={cardStyle}>
           <h2 style={nameStyle}>{dog.name}</h2>
@@ -82,6 +96,15 @@ function HeroDogBoard() {
             <p><strong>Hero Message:</strong> {dog.heroMessage}</p>
           </div>
 
+          {/* ⭐ EDIT BUTTON */}
+          <button
+            style={buttonStyle}
+            onClick={() => setEditingDog(dog)}
+          >
+            Edit
+          </button>
+
+          {/* ⭐ DELETE BUTTON */}
           <button
             style={buttonStyle}
             onClick={() => {
