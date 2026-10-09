@@ -2,7 +2,7 @@
 
 function Footer() {
   return (
-    <footer class="footer">
+    <footer className="footer">
   <div class="footer-links">
     <a href="https://github.com/">GitHub</a>
     <span>|</span>
