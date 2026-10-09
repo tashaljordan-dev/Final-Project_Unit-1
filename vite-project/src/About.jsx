@@ -80,8 +80,8 @@ function About() {
         <h3>
           Dr. Tasha Jordan is an award winning STEM educator. She has taught in multiple school districts throughout the St. Louis region. She enjoys applying what she learns in LaunchCode to her middle school computer science classroom. She earned a Doctor of Education in STEM Teaching and Learning from the University of Pittsburgh in June 2024. 
           <p>
-            This project was built using React, Vite, and React Router. It demonstrates basic routing and component structure. The app developer (that's me!) 
-            utilized HTML, CSS, and JavaScript to create this app.
+            Hero Dog is a full‑stack pet‑wellness application designed to support daily health tracking, BG curve logging, recipes, resources, reminders, and a dedicated Hero Dog board that celebrates diabetic dogs and their stories. The platform provides a clean, modular, and responsive interface built with React and powered by a Spring Boot API, allowing users to create, view, and manage pet‑health data with ease. By integrating structured wellness tools with an uplifting community feature, the project demonstrates practical full‑stack development skills, RESTful API design, database modeling, and thoughtful UI/UX for real‑world pet care.
+
           </p>
         </h3>
 
