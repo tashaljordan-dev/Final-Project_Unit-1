@@ -1,48 +1,7 @@
 import { useEffect, useState } from "react";
 import { getHeroDogs, deleteHeroDog } from "../api/heroDogApi.js";
 import EditDogForm from "./EditDogForm";
-
-// --- Inline Styles ---
-const cardStyle = {
-  backgroundColor: "tan",
-  border: "4px solid #2f6f6f",
-  borderRadius: "14px",
-  padding: "20px",
-  margin: "20px auto",
-  maxWidth: "500px",
-  boxShadow: "0 4px 8px rgba(0,0,0,0.15)",
-  fontFamily: "Cambria, Georgia, serif"
-};
-
-const nameStyle = {
-  textAlign: "center",
-  color: "#2f6f6f",
-  marginBottom: "10px"
-};
-
-const imgStyle = {
-  width: "200px",
-  height: "auto",
-  borderRadius: "12px",
-  display: "block",
-  margin: "0 auto 15px auto"
-};
-
-const infoStyle = {
-  fontSize: "16px",
-  lineHeight: "1.5",
-  marginBottom: "15px"
-};
-
-const buttonStyle = {
-  marginTop: "10px",
-  padding: "8px 14px",
-  backgroundColor: "#2f6f6f",
-  color: "white",
-  border: "none",
-  borderRadius: "8px",
-  cursor: "pointer"
-};
+import "./HeroDogBoard.css";
 
 function HeroDogBoard() {
   const [dogs, setDogs] = useState([]);
@@ -64,7 +23,6 @@ function HeroDogBoard() {
         Number of Hero Dogs: {dogs.length}
       </h2>
 
-      {/* ⭐ EDIT FORM (only shows when editingDog is set) */}
       {editingDog && (
         <EditDogForm
           dog={editingDog}
@@ -76,37 +34,34 @@ function HeroDogBoard() {
         />
       )}
 
-      {/* ⭐ DOG CARDS */}
       {dogs.map((dog) => (
-        <div key={dog.id} style={cardStyle}>
-          <h2 style={nameStyle}>{dog.name}</h2>
+        <div key={dog.id} className="hero-dog-card">
+          <h2 className="hero-dog-name">{dog.name}</h2>
 
           {dog.photoUrl && (
             <img
               src={dog.photoUrl}
               alt={dog.name}
-              style={imgStyle}
+              className="hero-dog-img"
             />
           )}
 
-          <div style={infoStyle}>
+          <div className="hero-dog-info">
             <p><strong>Breed:</strong> {dog.breed}</p>
             <p><strong>Age:</strong> {dog.age}</p>
             <p><strong>Years Diabetic:</strong> {dog.yearsDiabetic}</p>
             <p><strong>Hero Message:</strong> {dog.heroMessage}</p>
           </div>
 
-          {/* ⭐ EDIT BUTTON */}
           <button
-            style={buttonStyle}
+            className="hero-dog-btn"
             onClick={() => setEditingDog(dog)}
           >
             Edit
           </button>
 
-          {/* ⭐ DELETE BUTTON */}
           <button
-            style={buttonStyle}
+            className="hero-dog-btn"
             onClick={() => {
               deleteHeroDog(dog.id).then(() => {
                 setDogs(dogs.filter((d) => d.id !== dog.id));
